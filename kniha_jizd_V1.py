@@ -21,10 +21,10 @@ form_layout = [
     [sg.Submit(),sg.Button("Clear"),sg.Exit()]
 ]
 
-#inicializace okna
+#window inicialization
 window = sg.Window("Kniha Jízd", form_layout)
 
-#funkce clear tlačítka
+#Clear button function
 def clear_input():
     for key in values:
         window[key]("")
